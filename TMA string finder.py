@@ -16,8 +16,20 @@ print()
 start_index = input("Episode on which to begin search: ")
 end_index = int(input("Episode on which to end search: "))
 search_term = str(input("Word(s) to search for: "))
-print_sentences = input("Print sentences? (y/n) ")
-print_sentences = print_sentences.lower()
+
+pr_sen_valid = False
+pr_sen_valid_inputs = ["yes", "y", "no", "n"]
+
+# If invalid input given, re-prompt user for input
+while not pr_sen_valid:
+    print_sentences = input("Print sentences? (y/n) ")
+    print_sentences = print_sentences.lower()
+
+    if print_sentences in pr_sen_valid_inputs:
+        pr_sen_valid = True
+
+    else:
+        print("Invalid input. Please use '11y' or 'n'.")
 
 # Change print_sentences to true if user answers y or yes
 if print_sentences == "y" or print_sentences == "yes":
