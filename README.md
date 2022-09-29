@@ -6,4 +6,4 @@ The program will provide you with instructions when run. It will prompt you to g
 
 The main reason I made this program is that the search function on the snarp.github.io TMA transcripts doesn't have episode filtering options, so you can't prevent yourself from getting spoilers. 
 
-This program is dumb. By that I mean that I've put little effort into making it catch bad user input. 
+This program is dumb. By that I mean that I've put little effort into making it catch bad user input. If you want to improve it, contributions are welcome. 
