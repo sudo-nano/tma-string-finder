@@ -6,11 +6,9 @@ This program lets you specify a range of Magnus Archives episodes to search for 
 Includes the ability to either return the episodes containing the search string, or return the sentences in each episode containing the string. 
 
 ## How to use:
-The program will provide you with instructions when run. It will prompt you to give the episodes to begin and end searching, the string you're searching for, and whether you want it to print sentences. 
+Run the program with `python3 "TMA string finder.py"`. It will provide you with instructions when run. It will prompt you to give the episodes to begin and end searching, the string you're searching for, and whether you want it to print sentences. 
 
-The main reason I made this program is that the search function on the snarp.github.io TMA transcripts doesn't have episode filtering options, so you can't prevent yourself from getting spoilers. 
-
-This program is dumb. By that I mean that I've put little effort into making it catch bad user input. If you want to improve it, contributions are welcome.
+This code is pretty quick and dirty, so the invalid input handling isn't perfect. Contributions are welcome. 
 
 ## Async Version
-The file "TMA transcript searcher async v2.py" is the experimental version that does asynchronous web requests. This cuts execution time by about 75%, assuming your network speed isn't the bottleneck. It's very unpolished, the invalid input handling is bad and it doesn't actually listen if you tell it not to print sentences. It's fast, though. 
+Run `python3 "TMA transcript searcher async v2.py"` for the experimental version that does asynchronous web requests. This cuts execution time by about 75%, assuming your network speed isn't the bottleneck. It's very unpolished, the invalid input handling is bad and it doesn't actually listen if you tell it not to print sentences. 
